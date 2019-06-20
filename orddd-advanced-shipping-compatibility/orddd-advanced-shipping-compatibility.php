@@ -64,7 +64,8 @@ class orddd_advance_shipping_compatibility {
         $args = array(
             'post_type'   => 'shipping_package',
             'post_status' => 'publish',
-            'hide_empty'  => 0
+            'hide_empty'  => 0,
+            'numberposts' => -1
         );
 
         $shipping_packages = get_posts( $args );
